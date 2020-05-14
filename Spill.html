@@ -4,29 +4,29 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <meta charset="utf-8">
   <title>Spill</title>
-  <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  </style> 
 </head>
 <body>
-      <!-- Header -->
-      <header>
-          <nav>
-            <ul class="nav_links">
-              <li><a href="index.html">Hjem</a></li>
-              <li><a href="Kilder.html">Kilder</a></li>
-              <li><a href="Internettet.html">Internettet</a></li>
-              <li><a href="Åndsverklov.html">Andsverklov</a></li>
-              <li><a href="Escaperoom.html">Digital Escape Room</a></li>
-              <li><a href="Videoer.html">Videoer</a></li>
-              <li><a href="tutorial.html">HTML and CSS Tutorial</a></li>
-            </ul>
-          </nav>
-          <a class="cta" href="spill.html"><button>Spill</button></a>
-        </header>
+  <!-- Header -->
+  <header>
+    <!-- Meny -->
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="Kilder.html">Kilder</a></li>
+        <li><a href="Internettet.html">Internettet</a></li>
+        <li><a href="Åndsverklov.html">Andsverklov</a></li>
+        <li><a href="Escaperoom.html">Digital Escape Room</a></li>
+        <li><a href="Videoer.html">Videoer</a></li>
+        <li><a href="tutorial.html">HTML and CSS Tutorial</a></li>
+      </ul>
+    </nav>
+    <a href="spill.html"><button style="color: #456990;">Spill</button></a>
+  </header>
+
+      <!-- Scratch Spill -->
+      <div>
+        <iframe src="https://scratch.mit.edu/projects/390085015/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
 
       <!-- Snake -->
       <div class="Snake">
@@ -175,6 +175,15 @@ document.addEventListener('keydown', function(e) {
 requestAnimationFrame(loop);
 </script>
 </div>
+
+<script>
+  window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+
+        </script>
+
 <!-- Snake Ferdig -->
 </body>
 </html>
